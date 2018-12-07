@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Todoly</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>ShowAllTasksServlet</servlet-name>
+    <servlet-class>com.siqi.taskadmin.controller.ShowAllTasksServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowAllTasksServlet</servlet-name>
+    <url-pattern>/ShowAllTasksServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteTaskServlet</servlet-name>
+    <servlet-class>com.siqi.taskadmin.controller.DeleteTaskServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteTaskServlet</servlet-name>
+    <url-pattern>/DeleteTaskServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddNewTaskServlet</servlet-name>
+    <servlet-class>com.siqi.taskadmin.controller.AddNewTaskServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddNewTaskServlet</servlet-name>
+    <url-pattern>/AddNewTaskServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>EditTaskServlet</servlet-name>
+    <servlet-class>com.siqi.taskadmin.controller.EditTaskServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditTaskServlet</servlet-name>
+    <url-pattern>/EditTaskServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
